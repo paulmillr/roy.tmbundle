@@ -12,30 +12,29 @@
 	<array>
 		<dict>
 			<key>match</key>
-			<string>(//).*$
-?</string>
+			<string>(//).*$</string>
 			<key>name</key>
-			<string>comment.line.double-slash.source.roy</string>
+			<string>comment.line.double-slash.roy</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>(?x:-?(?:0|[1-9]\d*)(?:\.\d+)?)</string>
 			<key>name</key>
-			<string>constant.numeric.source.roy</string>
-		</dict>
-		<dict>
-			<key>begin</key>
-			<string>"</string>
-			<key>end</key>
-			<string>"</string>
-			<key>name</key>
-			<string>string.quoted.double.source.roy</string>
+			<string>constant.numeric.roy</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>true|false</string>
 			<key>name</key>
-			<string>constant.language.source.roy</string>
+			<string>constant.language.roy</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>"</string>
+			<key>end</key>
+			<string>"</string>
+			<key>name</key>
+			<string>string.quoted.double.roy</string>
 		</dict>
 		<dict>
 			<key>begin</key>
@@ -43,19 +42,31 @@
 			<key>end</key>
 			<string>'</string>
 			<key>name</key>
-			<string>string.quoted.single.source.roy</string>
+			<string>string.quoted.single.roy</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>let|fn|if|then|else|data|type|match|case|do|bind|return|macro|with</string>
+			<string>[|!%$?~+:\-=&lt;/&gt;\\]+</string>
 			<key>name</key>
-			<string>keyword.other.source.roy</string>
+			<string>keyword.operator.roy</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(let|fn|if|then|else|data|type|match|case|do|bind|return|macro|with)\b</string>
+			<key>name</key>
+			<string>keyword.other.roy</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b[A-Z][a-zA-Z0-9\$\_]*</string>
 			<key>name</key>
-			<string>support.type.source.roy</string>
+			<string>support.type.roy</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(id|flip|not|even|odd|succ|pred|map|filter|head|tail|empty|length|foldl|replicate|take|maybe)\b</string>
+			<key>name</key>
+			<string>support.function.std.roy</string>
 		</dict>
 	</array>
 	<key>scopeName</key>
