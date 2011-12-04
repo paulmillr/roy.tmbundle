@@ -24,7 +24,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>true|false</string>
+			<string>true|false|⊥</string>
 			<key>name</key>
 			<string>constant.language.roy</string>
 		</dict>
@@ -46,7 +46,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>[|!%$?~+:\-=&lt;/&gt;\\]+</string>
+			<string>[|!%$?~+*:\-=&lt;/&gt;\\≠λ←→⇒∈∉∘]+</string>
 			<key>name</key>
 			<string>keyword.operator.roy</string>
 		</dict>
@@ -58,15 +58,21 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b[A-Z][a-zA-Z0-9\$\_]*</string>
+			<string>\b(π|π2|τ)\b</string>
 			<key>name</key>
-			<string>support.type.roy</string>
+			<string>support.constant.roy</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b(id|flip|not|even|odd|succ|pred|map|filter|head|tail|empty|length|foldl|replicate|take|maybe)\b</string>
 			<key>name</key>
 			<string>support.function.std.roy</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b[A-Z][a-zA-Z0-9\$\_]*</string>
+			<key>name</key>
+			<string>support.type.roy</string>
 		</dict>
 	</array>
 	<key>scopeName</key>
