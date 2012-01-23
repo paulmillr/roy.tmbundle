@@ -52,7 +52,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(let|fn|if|then|else|data|type|match|case|do|bind|return|macro|with)\b</string>
+			<string>\b(let|fn|if|then|else|data|type|match|case|do|bind|return|macro|with|import|export)\b</string>
 			<key>name</key>
 			<string>keyword.other.roy</string>
 		</dict>
